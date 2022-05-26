@@ -102,7 +102,7 @@ namespace lab1Csharp
 
         public void AddExams(Exam[] newExams)
         {
-            if (newExams.Length == 0) return;
+            if (Exams == null || newExams.Length == 0) return;
 
             Exam[] allExams = new Exam[Exams.Length + newExams.Length];
             
